@@ -1,0 +1,36 @@
+#include <iostream>
+#include<cassert>
+#include<math.h>
+#include<Windows.h>
+using namespace std;
+
+
+void sum()
+{
+	int k,n = 0;
+	int i=0;
+	cout<<"Введите количество элементов: ";
+    cin>>n;
+    int a[n];
+
+    for (int i = 0 ; i<n;i++){
+		a[i] = rand()%20-10;
+	}
+    for (int i =0;i<n;i++){
+        if (a[i]<0){
+			k+=a[i];
+		}
+	}
+
+	cout<<"сумма отриц эл-тов "<<k;
+}
+
+int main()
+{
+SetConsoleCP(1251);
+SetConsoleOutputCP(1251);
+	sum();
+	system ("pause");
+    return 0;
+}
+
